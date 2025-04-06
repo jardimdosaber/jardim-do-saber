@@ -82,15 +82,7 @@ main p {
   text-align: center;
 }
 
-/* Rodapé */
-footer {
-  background-color: #ffe0f0;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #666;
-  border-top: 3px dotted #ffb6c1;
-  margin-top: 50px;
+
 }
 
 /* Botões */
@@ -315,3 +307,12 @@ main {
   padding: 10px;
   border-bottom: 1px solid #ffd6e0;
 }
+/* Rodapé */
+footer {
+  background-color: #ffe0f0;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 3px dotted #ffb6c1;
+  margin-top: 50px;
