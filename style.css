@@ -1,0 +1,92 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(to top left, #cceeff, #fff9f0);
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #ffe0f0;
+  border-bottom: 4px dotted #ffb6c1;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #ff69b4;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #777;
+}
+
+/* Menu */
+nav {
+  background-color: #fff4fa;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 3px solid #ffccd5;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff69b4;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffa07a;
+}
+
+/* Área principal */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff8fc;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(255, 192, 203, 0.2);
+}
+
+main h2 {
+  color: #ff69b4;
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+main p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Rodapé */
+footer {
+  background-color: #ffe0f0;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 3px dotted #ffb6c1;
+  margin-top: 50px;
+}
