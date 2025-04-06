@@ -82,9 +82,6 @@ main p {
   text-align: center;
 }
 
-
-}
-
 /* Botões */
 button {
   background-color: #ff6f61;
@@ -229,10 +226,7 @@ body.contato .contato-links a {
 body.contato .contato-links a:hover {
   color: #ffa07a;
 }
-/* Garante que o rodapé fique sempre embaixo */
-html, body {
-  height: 100%;
-}
+
 
 body {
   display: flex;
@@ -307,12 +301,134 @@ main {
   padding: 10px;
   border-bottom: 1px solid #ffd6e0;
 }
-/* Rodapé */
-footer {
-  background-color: #ffe0f0;
+.contato-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contato-botao {
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.contato-botao:hover {
+  transform: scale(1.05);
+}
+
+.contato-botao.insta {
+  background-color: #ff69b4;
+}
+
+.contato-botao.whatsapp {
+  background-color: #25D366;
+}
+
+.contato-botao.mapa {
+  background-color: #87CEEB;
+}
+
+.materiais-tabela h3 {
+  color: #ff69b4;
+  margin-top: 30px;
+  font-size: 22px;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #666;
-  border-top: 3px dotted #ffb6c1;
-  margin-top: 50px;
+}
+
+.materiais-tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff8fc;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px rgba(255, 182, 193, 0.2);
+}
+
+.materiais-tabela th,
+.materiais-tabela td {
+  border: 1px dashed #ffb6c1;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.materiais-tabela th {
+  background-color: #ffe0f0;
+  color: #ff1493;
+}
+
+.materiais-tabela td a {
+  color: #ff69b4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.materiais-tabela td a:hover {
+  color: #ff4500;
+  text-decoration: underline;
+}
+.rodape-fofo {
+  background-color: #ffe6f0;
+  color: #d63384;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 40px;
+  border-top: 3px dotted #f5a9c2;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 10px rgba(255, 182, 193, 0.2);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+.contato-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contato-botao {
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.contato-botao:hover {
+  transform: scale(1.05);
+}
+
+.contato-botao.insta {
+  background-color: #ff69b4;
+}
+
+.contato-botao.whatsapp {
+  background-color: #25D366;
+}
+
+.contato-botao.mapa {
+  background-color: #87CEEB;
+}
