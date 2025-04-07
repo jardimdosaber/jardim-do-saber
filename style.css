@@ -1,88 +1,336 @@
-
-/* Estilo base */
+/* ---------------------- ESTILO GERAL ---------------------- */
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #FFFAF0; /* Fundo principal amarelo clarinho */
   margin: 0;
-  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #E6CCFF;
+  background-image: url("image.png"); /* florzinhas */
+  background-size: 200px auto;
+  background-position: top left;
+  background-repeat: repeat;
 }
 
-/* Cabeçalho */
-header {
-  background-color: #FFFAF0;
-  text-align: center;
+/* Para garantir que o conteúdo principal cresça corretamente */
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 40px auto;
   padding: 20px;
-  color: #A0522D;
+  background-color: #E6CCFF;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(255, 192, 203, 0.2);
+}
+
+/* ---------------------- CABEÇALHO ---------------------- */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #E6CCFF;
+  border-bottom: 4px dotted #CCFFCC;
+  background-image: url("jardim-inferior.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 36px;
+  margin: 0;
+  color: #D63384;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 header p {
-  font-size: 1.2em;
-  margin: 0;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
 }
 
-/* Menu de navegação */
+/* ---------------------- MENU ---------------------- */
 nav {
   background-color: #FFFAF0;
-  padding: 10px 0;
+  padding: 15px 0;
   text-align: center;
+  border-bottom: 3px solid #E6CCFF;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-nav li {
+nav ul li {
   display: inline-block;
   margin: 0 15px;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none;
-  color: #333;
   font-weight: bold;
-  font-size: 1.1em;
+  color: #D63384;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
-nav a:hover {
+nav ul li a:hover {
   color: #FF69B4;
 }
 
-/* Conteúdo principal */
-main {
-  background-color: #FFFAF0; /* Caixinha amarelinha */
-  padding: 30px;
-  border: 3px dotted pink;
-  border-radius: 20px;
-  margin: 40px auto;
-  max-width: 800px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* ---------------------- TÍTULOS E TEXTOS ---------------------- */
 main h2 {
-  background-color: #CCFFCC; /* Verdinho */
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-size: 1.5em;
+  color: #D63384;
+  font-size: 26px;
+  margin-bottom: 10px;
   text-align: center;
-  margin: 0 auto 30px auto;
-  display: inline-block;
-  color: #C71585;
 }
 
-/* Rodapé */
+main p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ---------------------- BOTÕES ---------------------- */
+button {
+  background-color: #CCFFCC;
+  color: #444;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #AEEEEE;
+}
+
+/* ---------------------- RODAPÉ FIXO E FOFO ---------------------- */
 footer.rodape-fofo {
-  background-color: #FFFAF0;
+  background-color: #FFE6F0;
+  color: #D63384;
   text-align: center;
   padding: 15px;
-  font-size: 0.9em;
-  color: #A0522D;
-  border-top: 2px dashed pink;
+  font-size: 16px;
+  border-top: 3px dotted #F5A9C2;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 10px rgba(255, 182, 193, 0.2);
+  margin-top: auto;
+}
+
+/* ---------------------- BLOG ---------------------- */
+.post {
+  background-color: #FFFACD;
+  border: 2px dashed #CCFFCC;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+  color: #D63384;
+  margin-bottom: 5px;
+}
+
+.post p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ---------------------- MATERIAIS ---------------------- */
+.blocos-materiais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.bloco {
+  background-color: #FFFAF0;
+  border: 2px dashed #E6CCFF;
+  border-radius: 20px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
+  transition: transform 0.3s;
+}
+
+.bloco:hover {
+  transform: scale(1.05);
+  background-color: #FFFACD;
+}
+
+.bloco a {
+  text-decoration: none;
+  color: #D63384;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ---------------------- LITERATURA ---------------------- */
+body.literatura main {
+  background-color: #FFFAF0;
+  border: 3px dotted #E6CCFF;
+}
+
+body.literatura .livro {
+  background-color: #F8E6FF;
+  border: 2px solid #DDA0DD;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(186, 85, 211, 0.2);
+}
+
+body.literatura .livro h3 {
+  margin-bottom: 10px;
+  color: #9932CC;
+}
+
+body.literatura .livro a {
+  text-decoration: none;
+  color: #BA55D3;
+  font-weight: bold;
+}
+
+/* ---------------------- CONTATO ---------------------- */
+body.contato {
+  background: linear-gradient(to top left, #FFFAF0, #CCFFCC);
+}
+
+body.contato main {
+  background-color: #FFF9FB;
+  border: 3px dashed #E6CCFF;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+}
+
+.contato-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contato-botao {
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.contato-botao:hover {
+  transform: scale(1.05);
+}
+
+.contato-botao.insta {
+  background-color: #ff69b4;
+}
+
+.contato-botao.whatsapp {
+  background-color: #25D366;
+}
+
+.contato-botao.mapa {
+  background-color: #87CEEB;
+}
+
+/* ---------------------- INFORMAÇÕES ---------------------- */
+.info {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #FFFACD;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+}
+
+.info section {
+  margin-bottom: 40px;
+}
+
+.info h2 {
+  color: #D63384;
+  border-bottom: 2px dashed #FF69B4;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.info ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.info ul li::before {
+  content: "🌸 ";
+  margin-right: 5px;
+}
+
+.info .dica {
+  margin-top: 10px;
+  font-style: italic;
+  color: #D2691E;
+}
+
+/* ---------------------- TABELAS ---------------------- */
+.info table,
+.materiais-tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #FFF8FC;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px rgba(255, 182, 193, 0.2);
+}
+
+.info th,
+.materiais-tabela th {
+  background-color: #E6CCFF;
+  color: #D63384;
+  padding: 10px;
+  text-align: left;
+}
+
+.info td,
+.materiais-tabela td {
+  padding: 10px;
+  border-bottom: 1px solid #FFD6E0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.materiais-tabela h3 {
+  color: #D63384;
+  margin-top: 30px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.materiais-tabela td a {
+  color: #D63384;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.materiais-tabela td a:hover {
+  color: #FF4500;
+  text-decoration: underline;
 }
