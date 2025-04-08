@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
   margin: 0;
   font-family: 'Fredoka', sans-serif;
@@ -131,4 +132,65 @@ table th {
   font-size: 1em;
   margin-top: 40px;
   color: #6B4C9A;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cabecalho h1 {
+    font-size: 2em;
+  }
+
+  .cabecalho p {
+    font-size: 1em;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    padding: 10px 20px;
+    font-size: 1.2em;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .caixinha-amarela {
+    padding: 15px;
+  }
+
+  table th, table td {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  .rodape-fofo {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecalho h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul li a {
+    padding: 8px 15px;
+    font-size: 1em;
+  }
+
+  .caixinha-amarela {
+    padding: 10px;
+  }
+
+  table th, table td {
+    font-size: 0.8em;
+  }
+
+  .rodape-fofo {
+    font-size: 0.8em;
+  }
 }
