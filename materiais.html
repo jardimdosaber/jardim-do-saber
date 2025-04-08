@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🖍️ Materiais Educativos | Espaço Jardim do Saber</title>
+  <title>🖍️ Materiais | Espaço Jardim do Saber</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="shortcut icon" href="favicon.png" type="image/png" />
@@ -12,9 +13,13 @@
 <body style="background-color: #FFFAF0;">
 
   <!-- Cabeçalho -->
-  <header>
-    <h1>🌼 Espaço Jardim do Saber 🌼</h1>
-    <p>Educando com carinho e criatividade 💖</p>
+  <header class="cabecalho">
+    <img src="imagens/florzinha.png" alt="Flor decorativa" class="florzinha-cabecalho" />
+    <div class="titulo-cabecalho">
+      <h1>🌼 Espaço Jardim do Saber 🌼</h1>
+      <p class="slogan">Educando com carinho e criatividade 💖</p>
+    </div>
+    <img src="imagens/florzinha.png" alt="Flor decorativa" class="florzinha-cabecalho" />
   </header>
 
   <!-- Navegação -->
@@ -32,10 +37,12 @@
 
   <!-- Conteúdo Principal -->
   <main>
-    <h2>🌈 Materiais Educativos 🌈</h2>
-    <p>Aqui estão alguns recursos encantadores para aprender brincando! 🌼✨</p>
+    <section class="caixinha-amarela">
+      <h2>🌈 Materiais Educativos 🌈</h2>
+      <p>Aqui estão alguns recursos encantadores para aprender brincando! 🌼✨</p>
+    </section>
 
-    <section class="materiais-tabela">
+    <section class="materiais-tabela caixinha-amarela">
       <h3>🅰️ Alfabetização</h3>
       <table>
         <tr>
@@ -44,14 +51,16 @@
         </tr>
         <tr>
           <td>Cartaz de letras</td>
-          <td><a href="https://example.com/letras" target="_blank">Ver Material</a></td>
+          <td><a href="https://example.com/letras" target="_blank" title="Abrir Cartaz de Letras">Ver Material</a></td>
         </tr>
         <tr>
           <td>Caça-palavras</td>
-          <td><a href="https://example.com/caca-palavras" target="_blank">Ver Material</a></td>
+          <td><a href="https://example.com/caca-palavras" target="_blank" title="Abrir Caça-Palavras">Ver Material</a></td>
         </tr>
       </table>
+    </section>
 
+    <section class="materiais-tabela caixinha-amarela">
       <h3>➕ Matemática</h3>
       <table>
         <tr>
@@ -60,17 +69,17 @@
         </tr>
         <tr>
           <td>Contando frutinhas</td>
-          <td><a href="https://example.com/frutinhas" target="_blank">Ver Material</a></td>
+          <td><a href="https://example.com/frutinhas" target="_blank" title="Abrir Atividade Contando Frutinhas">Ver Material</a></td>
         </tr>
         <tr>
           <td>Jogo da soma</td>
-          <td><a href="https://example.com/soma" target="_blank">Ver Material</a></td>
+          <td><a href="https://example.com/soma" target="_blank" title="Abrir Jogo da Soma">Ver Material</a></td>
         </tr>
       </table>
     </section>
 
     <div style="text-align: center; margin: 20px 0;">
-      <button style="padding: 10px 20px; font-size: 1rem; background-color: #AEEEEE; border: none; border-radius: 8px; cursor: pointer;">
+      <button class="botao-fofinho" title="Baixar todos os materiais disponíveis">
         📥 Baixar todos os materiais
       </button>
     </div>
